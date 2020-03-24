@@ -1,8 +1,0 @@
-foodie:
-  fileupload:
-    imageUserFaceLocation: /Users/shirui/Documents/project/foodie-img/face              # 存储路径
-    imageServerUrl: http://localhost:8088/foodie-img/face                               # 图片显示url
-  natapp:
-    payReturnUrl: http://cbnhzn.natappfree.cc/foodie-api/orders/notifyMerchantOrderPaid   # 微信or支付宝支付成功 -> 支付中心 -> 天天吃货平台 -> 回调通知的url
-  pay:
-    paymentUrl: http://payment.t.mukewang.com/foodie-payment/payment/createMerchantOrder  # 支付中心的调用地址
