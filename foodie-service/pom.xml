@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>foodie</artifactId>
+        <groupId>com.sr</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>foodie-service</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.sr</groupId>
+            <artifactId>foodie-mapper</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>joda-time</artifactId>
+                    <groupId>joda-time</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-codec</artifactId>
+                    <groupId>commons-codec</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <groupId>mysql</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+    </dependencies>
+
+</project>

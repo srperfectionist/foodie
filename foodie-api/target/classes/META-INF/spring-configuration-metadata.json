@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "foodie.fileupload",
+      "type": "com.sr.resource.FileUpload",
+      "sourceType": "com.sr.resource.FileUpload"
+    },
+    {
+      "name": "foodie.natapp",
+      "type": "com.sr.resource.Natapp",
+      "sourceType": "com.sr.resource.Natapp"
+    },
+    {
+      "name": "foodie.pay",
+      "type": "com.sr.resource.Payment",
+      "sourceType": "com.sr.resource.Payment"
+    }
+  ],
+  "properties": [
+    {
+      "name": "foodie.fileupload.image-server-url",
+      "type": "java.lang.String",
+      "sourceType": "com.sr.resource.FileUpload"
+    },
+    {
+      "name": "foodie.fileupload.image-user-face-location",
+      "type": "java.lang.String",
+      "sourceType": "com.sr.resource.FileUpload"
+    },
+    {
+      "name": "foodie.natapp.pay-return-url",
+      "type": "java.lang.String",
+      "sourceType": "com.sr.resource.Natapp"
+    },
+    {
+      "name": "foodie.pay.payment-url",
+      "type": "java.lang.String",
+      "sourceType": "com.sr.resource.Payment"
+    }
+  ],
+  "hints": []
+}
