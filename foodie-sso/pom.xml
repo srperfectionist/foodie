@@ -9,10 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>foodie-api</artifactId>
-
-    <!-- 打包war [1] -->
-<!--    <packaging>war</packaging>-->
+    <artifactId>foodie-sso</artifactId>
 
     <dependencies>
         <dependency>
@@ -20,6 +17,10 @@
             <artifactId>foodie-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
 </project>

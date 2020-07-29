@@ -11,6 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 /**
  * @author SR
@@ -79,7 +80,7 @@ public class JsonUtil {
             return null;
         }
         try {
-            return typeReference.getType().equals(String.class) ? (T) str : objectMapper.readValue(str, typeReference);
+            return typeReference.getType().equals(String.class) ? (T) str : (T)objectMapper.readValue(str, typeReference);
         } catch (IOException e) {
             log.warn("Parse String to Object error", e);
             return null;
@@ -94,5 +95,23 @@ public class JsonUtil {
             log.warn("Parse String to Object error", e);
             return null;
         }
+    }
+
+    /**
+     * 将json数据转换成pojo对象list
+     * @param jsonData
+     * @param beanType
+     * @return
+     */
+    public static <T> List<T> jsonToList(String jsonData, Class<T> beanType) {
+        JavaType javaType = objectMapper.getTypeFactory().constructParametricType(List.class, beanType);
+        try {
+            List<T> list = objectMapper.readValue(jsonData, javaType);
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

@@ -1,8 +1,11 @@
 package com.sr.service;
 
 import com.sr.pojo.OrderStatus;
+import com.sr.pojo.bo.ShopCartBO;
 import com.sr.pojo.bo.SubmitOrderBO;
 import com.sr.pojo.vo.OrderVO;
+
+import java.util.List;
 
 /**
  * @author shirui
@@ -11,11 +14,12 @@ import com.sr.pojo.vo.OrderVO;
 public interface IOrderService {
 
     /**
-     * 用户创建订单相关信息
+     * 用户订单创建相关信息
+     * @param shopcartBOList
      * @param submitOrderBo
      * @return
      */
-    OrderVO createOrder(SubmitOrderBO submitOrderBo);
+    OrderVO createOrder(List<ShopCartBO> shopcartBOList, SubmitOrderBO submitOrderBo);
 
     /**
      * 修改订单状态

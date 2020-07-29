@@ -1,19 +1,20 @@
-package com.sr.controller;
+package com.sr;
 
 import com.sr.enums.OrderStatusEnum;
 import com.sr.enums.PayMethodEnum;
 import com.sr.pojo.OrderStatus;
+import com.sr.pojo.bo.ShopCartBO;
 import com.sr.pojo.bo.SubmitOrderBO;
 import com.sr.pojo.vo.MerchantOrdersVO;
 import com.sr.pojo.vo.OrderVO;
 import com.sr.resource.Natapp;
 import com.sr.resource.Payment;
 import com.sr.service.IOrderService;
-import com.sr.utils.IMOOCJSONResult;
-import com.sr.utils.ServerResponse;
+import com.sr.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,6 +25,7 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * @author shirui
@@ -42,6 +44,8 @@ public class OrderController {
     private Natapp natapp;
 
     private Payment payment;
+
+    private RedisOperator redisOperator;
 
     @Autowired
     public void setiOrderService(IOrderService iOrderService) {
@@ -63,6 +67,11 @@ public class OrderController {
         this.payment = payment;
     }
 
+    @Autowired
+    public void setRedisOperator(RedisOperator redisOperator) {
+        this.redisOperator = redisOperator;
+    }
+
     @ApiOperation(value = "用户下单", notes = "用户下单", httpMethod = "POST")
     @PostMapping("/create")
     public ServerResponse create(
@@ -75,14 +84,25 @@ public class OrderController {
             return ServerResponse.createByErrorMessage("支付方式不支持！");
         }
 
+        String shopcartJson = redisOperator.get("shopcart:" + submitOrderBO.getUserId());
+        if (StringUtils.isBlank(shopcartJson)){
+            return ServerResponse.createByErrorMessage("购物数据不正确");
+        }
+
+        List<ShopCartBO> shopCartBOList = JsonUtil.jsonToList(shopcartJson, ShopCartBO.class);
+
         // 1. 创建订单
-        OrderVO orderVO = iOrderService.createOrder(submitOrderBO);
+        OrderVO orderVO = iOrderService.createOrder(shopCartBOList, submitOrderBO);
         String orderId = orderVO.getOrderId();
 
         // 2. 创建订单以后，移除购物车中已结算（已提交）的商品
 
-        // TODO 整合redis之后，完善购物车中的已结算商品清除，并且同步到前端的cookie
-        // CookieUtils.setCookie(request, response, FOODIE_SHOPCART, "", true);
+        // 清理覆盖现有的redis汇总的购物数据
+        shopCartBOList.removeAll(orderVO.getToBeRemovedShopcatdList());
+        redisOperator.set("shopcart:" + submitOrderBO.getUserId(), JsonUtil.objToString(shopCartBOList));
+
+        // 整合redis之后，完善购物车中的已结算商品清除，并且同步到前端的cookie
+        CookieUtils.setCookie(request, response, "shopcart", JsonUtil.objToString(shopCartBOList), true);
 
         // 3. 向支付中心发送当前订单，用于保存支付中心的订单数据
         MerchantOrdersVO merchantOrdersVO = orderVO.getMerchantOrdersVo();

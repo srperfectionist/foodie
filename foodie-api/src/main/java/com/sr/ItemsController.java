@@ -1,4 +1,4 @@
-package com.sr.controller;
+package com.sr;
 
 import com.sr.pojo.Items;
 import com.sr.pojo.ItemsImg;

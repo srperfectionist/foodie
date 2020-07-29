@@ -1,0 +1,7 @@
+spring:
+  datasource:                                           # 数据源的相关配置
+    url: jdbc:mysql://localhost:3306/foodie?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=UTC
+    password: root
+  elasticsearch:
+    rest:
+      uris: 172.16.57.147:9200

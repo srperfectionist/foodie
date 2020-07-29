@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.io.Serializable;
 
 /**
- * @author SR
+ * @author shirui
  * @date 2017/11/22
  *
  * 保证序列化json的时候，如果是null，key也会消失

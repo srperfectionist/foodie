@@ -1,8 +1,9 @@
-package com.sr.controller.center;
+package com.sr.center;
 
 import com.google.common.base.Splitter;
 import com.sr.pojo.Users;
 import com.sr.pojo.bo.center.CenterUserB0;
+import com.sr.pojo.vo.UserVO;
 import com.sr.pojo.vo.center.UsersVO;
 import com.sr.resource.FileUpload;
 import com.sr.service.center.ICenterUserService;
@@ -12,6 +13,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +27,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @author shirui
@@ -39,6 +42,8 @@ public class CenterUserController {
 
     private FileUpload fileUpload;
 
+    private RedisOperator redisOperator;
+
     @Autowired
     public void setiCenterUserService(ICenterUserService iCenterUserService) {
         this.iCenterUserService = iCenterUserService;
@@ -47,6 +52,11 @@ public class CenterUserController {
     @Autowired
     public void setFileUpload(FileUpload fileUpload) {
         this.fileUpload = fileUpload;
+    }
+
+    @Autowired
+    public void setRedisOperator(RedisOperator redisOperator) {
+        this.redisOperator = redisOperator;
     }
 
     @ApiOperation(value = "用户头像修改", notes = "用户头像修改", httpMethod = "POST")
@@ -140,19 +150,7 @@ public class CenterUserController {
         // 更新用户头像到数据库
         Users userResult = iCenterUserService.updateUserFace(userId, finalUserFaceUrl);
 
-        UsersVO usersVo = UsersVO.builder().id(userResult.getId())
-                            .nickname(userResult.getNickname())
-                            .realname(userResult.getRealname())
-                            .face(userResult.getFace())
-                            .username(userResult.getUsername())
-                            .sex(userResult.getSex())
-                            .build();
-
-        CookieUtils.setCookie(request, response, "user", JsonUtil.objToString(usersVo), true);
-
-        // TODO 后续要改，增加令牌token， 整合redis，分布式会话
-
-        return ServerResponse.createBySuccess();
+        return getServerResponse(request, response, userResult);
     }
 
     @ApiOperation(value = "修改用户信息", notes = "修改用户信心", httpMethod = "POST")
@@ -172,16 +170,19 @@ public class CenterUserController {
 
         Users userResult = iCenterUserService.updateUserInfo(useId, centerUserBo);
 
-        UsersVO usersVo = UsersVO.builder().id(userResult.getId())
-                .nickname(userResult.getNickname())
-                .realname(userResult.getRealname())
-                .face(userResult.getFace())
-                .username(userResult.getUsername())
-                .sex(userResult.getSex())
-                .build();
+        return getServerResponse(request, response, userResult);
+    }
 
-        CookieUtils.setCookie(request, response, "user", JsonUtil.objToString(usersVo), true);
+    private ServerResponse getServerResponse(HttpServletRequest request, HttpServletResponse response, Users userResult) {
+        String uniqueToken = UUID.randomUUID().toString().trim();
+        redisOperator.set("redis_user_token:" + userResult.getId(), uniqueToken);
 
-        return ServerResponse.createBySuccess();
+        UserVO userVo = new UserVO();
+        BeanUtils.copyProperties(userResult, userVo);
+        userVo.setUserUniqueToken(uniqueToken);
+
+        CookieUtils.setCookie(request, response, "user", JsonUtil.objToString(userVo), true);
+
+        return ServerResponse.createBySuccess(userVo);
     }
 }

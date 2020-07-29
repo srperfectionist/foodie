@@ -1,4 +1,4 @@
-package com.sr.controller;
+package com.sr;
 
 import com.sr.pojo.UserAddress;
 import com.sr.pojo.bo.AddressBO;

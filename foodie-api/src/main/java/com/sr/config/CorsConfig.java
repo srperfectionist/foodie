@@ -20,9 +20,6 @@ public class CorsConfig {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
 
         corsConfiguration.addAllowedOrigin("http://localhost:8080");
-        corsConfiguration.addAllowedOrigin("http://49.233.44.98:8080");
-        corsConfiguration.addAllowedOrigin("http://49.233.44.98:8080");
-        corsConfiguration.addAllowedOrigin("http://49.233.44.98");
         corsConfiguration.addAllowedOrigin("http://shop.z.sr.com:8080");
         corsConfiguration.addAllowedOrigin("http://center.z.sr.com:8080");
         corsConfiguration.addAllowedOrigin("http://shop.z.sr.com");

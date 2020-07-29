@@ -25,4 +25,6 @@ public class UserVO {
     private String face;
 
     private Integer sex;
+
+    private String userUniqueToken;
 }
