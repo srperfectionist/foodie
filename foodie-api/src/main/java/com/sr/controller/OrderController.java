@@ -1,4 +1,4 @@
-package com.sr;
+package com.sr.controller;
 
 import com.sr.enums.OrderStatusEnum;
 import com.sr.enums.PayMethodEnum;
@@ -89,7 +89,7 @@ public class OrderController {
             return ServerResponse.createByErrorMessage("购物数据不正确");
         }
 
-        List<ShopCartBO> shopCartBOList = JsonUtil.jsonToList(shopcartJson, ShopCartBO.class);
+        List<ShopCartBO> shopCartBOList = JSONUtil.jsonToList(shopcartJson, ShopCartBO.class);
 
         // 1. 创建订单
         OrderVO orderVO = iOrderService.createOrder(shopCartBOList, submitOrderBO);
@@ -99,10 +99,10 @@ public class OrderController {
 
         // 清理覆盖现有的redis汇总的购物数据
         shopCartBOList.removeAll(orderVO.getToBeRemovedShopcatdList());
-        redisOperator.set("shopcart:" + submitOrderBO.getUserId(), JsonUtil.objToString(shopCartBOList));
+        redisOperator.set("shopcart:" + submitOrderBO.getUserId(), JSONUtil.objToString(shopCartBOList));
 
         // 整合redis之后，完善购物车中的已结算商品清除，并且同步到前端的cookie
-        CookieUtils.setCookie(request, response, "shopcart", JsonUtil.objToString(shopCartBOList), true);
+        CookieUtils.setCookie(request, response, "shopcart", JSONUtil.objToString(shopCartBOList), true);
 
         // 3. 向支付中心发送当前订单，用于保存支付中心的订单数据
         MerchantOrdersVO merchantOrdersVO = orderVO.getMerchantOrdersVo();

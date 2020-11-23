@@ -4,7 +4,7 @@ import com.sr.pojo.Users;
 import com.sr.pojo.vo.UserVO;
 import com.sr.pojo.vo.center.UsersVO;
 import com.sr.service.IUserService;
-import com.sr.utils.JsonUtil;
+import com.sr.utils.JSONUtil;
 import com.sr.utils.MD5Util;
 import com.sr.utils.RedisOperator;
 import com.sr.utils.ServerResponse;
@@ -105,7 +105,7 @@ public class SSOController {
         UserVO userVO = new UserVO();
         BeanUtils.copyProperties(userResult, userVO);
         userVO.setUserUniqueToken(uniqueToken);
-        redisOperator.set("redis_user_token:" + userResult.getId(), JsonUtil.objToString(userVO));
+        redisOperator.set("redis_user_token:" + userResult.getId(), JSONUtil.objToString(userVO));
 
         // 3. 生成ticket门票，全局门票，代表用户在CAS端登陆过
         String userTicket = UUID.randomUUID().toString().trim();
@@ -169,7 +169,7 @@ public class SSOController {
         }
 
         // 验证成功，返回ok，携带用户会话
-        return ServerResponse.createBySuccess(JsonUtil.stringToObject(userRedis, UsersVO.class));
+        return ServerResponse.createBySuccess(JSONUtil.stringToObject(userRedis, UsersVO.class));
     }
 
     @PostMapping("/logout")

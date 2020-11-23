@@ -1,6 +1,6 @@
 package com.sr.interceptor;
 
-import com.sr.utils.JsonUtil;
+import com.sr.utils.JSONUtil;
 import com.sr.utils.RedisOperator;
 import com.sr.utils.ServerResponse;
 import org.apache.commons.lang3.StringUtils;
@@ -91,7 +91,7 @@ public class UserTokenInterceptor implements HandlerInterceptor {
             response.setCharacterEncoding("utf-8");
             response.setContentType("text/json");
             outputStream = response.getOutputStream();
-            outputStream.write(JsonUtil.objToString(ServerResponse.createByErrorMessage(message)).getBytes("utf-8"));
+            outputStream.write(JSONUtil.objToString(ServerResponse.createByErrorMessage(message)).getBytes("utf-8"));
             outputStream.flush();
         } catch(IOException e){
             e.printStackTrace();

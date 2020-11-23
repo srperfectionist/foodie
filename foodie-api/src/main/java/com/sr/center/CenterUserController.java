@@ -4,7 +4,6 @@ import com.google.common.base.Splitter;
 import com.sr.pojo.Users;
 import com.sr.pojo.bo.center.CenterUserB0;
 import com.sr.pojo.vo.UserVO;
-import com.sr.pojo.vo.center.UsersVO;
 import com.sr.resource.FileUpload;
 import com.sr.service.center.ICenterUserService;
 import com.sr.utils.*;
@@ -181,7 +180,7 @@ public class CenterUserController {
         BeanUtils.copyProperties(userResult, userVo);
         userVo.setUserUniqueToken(uniqueToken);
 
-        CookieUtils.setCookie(request, response, "user", JsonUtil.objToString(userVo), true);
+        CookieUtils.setCookie(request, response, "user", JSONUtil.objToString(userVo), true);
 
         return ServerResponse.createBySuccess(userVo);
     }

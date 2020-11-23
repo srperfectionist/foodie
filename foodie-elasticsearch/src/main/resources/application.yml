@@ -1,7 +1,35 @@
+server:
+  port: 8033
+
 spring:
   datasource:                                           # 数据源的相关配置
+    type: com.zaxxer.hikari.HikariDataSource            # 数据源类型：HikariCP
+    driver-class-name: com.mysql.cj.jdbc.Driver         # mysql驱动
     url: jdbc:mysql://localhost:3306/foodie?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=UTC
+    username: root
     password: root
-  elasticsearch:
-    rest:
-      uris: 172.16.57.147:9200
+    hikari:
+      connection-timeout: 30000       # 等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 默认:30秒
+      minimum-idle: 5                 # 最小连接数 上线修改为10
+      maximum-pool-size: 20           # 最大连接数
+      auto-commit: true               # 自动提交
+      idle-timeout: 600000            # 连接超时的最大时长（毫秒），超时则被释放（retired），默认:10分钟
+      pool-name: DateSourceHikariCP   # 连接池名字
+      max-lifetime: 1800000           # 连接的生命时长（毫秒），超时而且没被使用则被释放（retired），默认:30分钟 1800000ms
+      connection-test-query: SELECT 1
+  redis:                          # redis集群配置
+    password: 123456
+    cluster:
+      nodes: 172.16.57.140:6379,172.16.57.141:6379,172.16.57.142:6379,172.16.57.143:6379,172.16.57.144:6379,172.16.57.145:6379
+#  elasticsearch:
+#    rest:
+#      uris: 172.16.57.147:9200
+elasticsearch:
+  hosts: 172.16.57.147:9200,172.16.57.148:9200,172.16.57.149:9200
+  connectTimeout: 1000          # http链接超时时间
+  socketTimeout: 30000          # socket链接超时时间
+  connectionRequestTimeout: 500 # 获取链接超时的时间
+  maxconnectTotal: 100          # 最大连接数
+  maxconnectPerRoute: 100       # 最大路由连接数
+  username: username            # 用户名
+  password: password            # 密码

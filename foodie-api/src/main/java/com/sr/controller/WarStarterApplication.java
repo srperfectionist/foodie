@@ -1,5 +1,6 @@
-package com.sr;
+package com.sr.controller;
 
+import com.sr.Application;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

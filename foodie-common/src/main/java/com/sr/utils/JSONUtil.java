@@ -18,7 +18,7 @@ import java.util.List;
  * @date 2017/12/27
  */
 @Slf4j
-public class JsonUtil {
+public class JSONUtil {
 
     private static ObjectMapper objectMapper = new ObjectMapper();
 
