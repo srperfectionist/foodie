@@ -8,198 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="增加sso elasticsearch">
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/CatsEnum 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/CatsEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/CommentLevelEnum 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/CommentLevelEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/OrderStatusEnum 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/OrderStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/PayMethodEnum 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/PayMethodEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/SexEnum 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/SexEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/YesOrNoEnum 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/enums/YesOrNoEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/BindingResultUtil 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/BindingResultUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/CookieUtils 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/CookieUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/DateUtil 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/DateUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/DesensitizationUtil 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/DesensitizationUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/IMOOCJSONResult 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/IMOOCJSONResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/JSONUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/JsonUtil 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/MD5Util 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/MD5Util.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/MobileEmailUtils 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/MobileEmailUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/PageGridResult 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/PageGridResult$PageGridResultBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/PageGridResult$PageGridResultBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/PageGridResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/PageGridResultUtil 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/PageGridResultUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/RedisOperator 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/RedisOperator$1 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/RedisOperator$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/RedisOperator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/ResponseCode 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/ResponseCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/ServerResponse 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/com/sr/utils/ServerResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/Code.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/DayCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/Id 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/Id.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/IdWorker 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/IdWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/InvalidSystemClock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/RandomCodeStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/Sid$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/Sid.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/WorkerIdStrategy 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/WorkerIdStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy$1 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/strategy/FileLock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/HttpReq.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/IPv4Utils 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/IPv4Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/Ip.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/Props$Silent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/Props.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/Serializes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-common/target/classes/org/n3r/idworker/utils/Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/config/ElasticsearchConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/pojo/ElasticEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/util/ElasticsearchUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/Application 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/Application 3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig$1 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig$1 3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig$2 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig$2 3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/config/ElasticsearchConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/ElasticEntity 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/ElasticEntity$ElasticEntityBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/ElasticEntity$ElasticEntityBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/ElasticEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/User 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/User$UserBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/User$UserBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/util/ElasticsearchUtil 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/classes/com/sr/util/ElasticsearchUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/test-classes/com/test/EsTest 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/target/test-classes/com/test/EsTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Carousel 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Carousel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Category 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Items 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Items.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsComments 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsComments.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsImg 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsImg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsParam 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsParam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsSpec 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/ItemsSpec.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/OrderItems 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/OrderItems.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/OrderStatus 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/OrderStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Orders 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Orders.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/UserAddress 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/UserAddress$UserAddressBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/UserAddress$UserAddressBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/UserAddress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Users 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/Users.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/AddressBO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/AddressBO$AddressBOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/AddressBO$AddressBOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/AddressBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/ShopCartBO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/ShopCartBO$ShopCartBOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/ShopCartBO$ShopCartBOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/ShopCartBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/SubmitOrderBO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/SubmitOrderBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/UserBO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/UserBO$UserBOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/UserBO$UserBOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/UserBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/center/CenterUserB0 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/center/CenterUserB0.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/center/OrderItemsCommentBO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/bo/center/OrderItemsCommentBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/CategoryVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/CategoryVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/CommentLevelCountsVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/CommentLevelCountsVO$CommentLevelCountsVOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/CommentLevelCountsVO$CommentLevelCountsVOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/CommentLevelCountsVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemCommentVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemCommentVO$ItemCommentVOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemCommentVO$ItemCommentVOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemCommentVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemInfoVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemInfoVO$ItemInfoVOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemInfoVO$ItemInfoVOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ItemInfoVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/MerchantOrdersVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/MerchantOrdersVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/MyCommentVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/MyCommentVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/NewItemsVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/NewItemsVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/OrderStatusCountsVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/OrderStatusCountsVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/OrderVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/OrderVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/SearchItemsVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/SearchItemsVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ShopCartVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ShopCartVO$ShopCartVOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ShopCartVO$ShopCartVOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/ShopCartVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/SimpleItemVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/SimpleItemVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/SubCategoryVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/SubCategoryVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/UserVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/UserVO$UserVOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/UserVO$UserVOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/UserVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/MyOrdersVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/MyOrdersVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/MySubOrderItemVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/MySubOrderItemVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/UsersVO 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/UsersVO$UsersVOBuilder 2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/UsersVO$UsersVOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-pojo/target/classes/com/sr/pojo/vo/center/UsersVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/controller/ItemsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/pojo/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/service/IItemsESService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/service/impl/ItemsESServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/error/2020-05-30/error.0.log.zip" afterDir="false" />
@@ -236,23 +49,10 @@
       <change afterPath="$PROJECT_DIR$/logs/warn/2020-05-30/warn.0.log.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/warn/2020-05-31/warn.0.log.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/warn/2020-07-22/warn.0.log.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/AddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/ItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/ItemsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/PassportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/ShopCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/ShopCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/WarStarterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/controller/WarStarterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/center/CenterUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/center/CenterUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/interceptor/UserTokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/sr/interceptor/UserTokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-common/src/main/java/com/sr/utils/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-common/src/main/java/com/sr/utils/JSONUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-sso/src/main/java/com/sr/controller/SSOController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-sso/src/main/java/com/sr/controller/SSOController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/util/ElasticsearchUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/util/ElasticsearchUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,9 +122,9 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sr" />
       <recent name="com.sr.config" />
       <recent name="com.sr.controller" />
+      <recent name="com.sr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/foodie-es/src/main/resources" />
@@ -340,16 +140,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EsTest.createIndex">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -385,38 +183,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsTest.createIndexStu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="foodie-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.EsTest" />
-      <option name="METHOD_NAME" value="createIndexStu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EsTest.deleteIndexStu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="foodie-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.EsTest" />
-      <option name="METHOD_NAME" value="deleteIndexStu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EsTest.updateStuDoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="foodie-elasticsearch" />
       <extension name="coverage">
@@ -433,13 +199,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="foodie [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+                <option value="-Dmaven.test.skip=true" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="foodie-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="foodie-elasticsearch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="JUnit.EsTest.createIndex" />
         <item itemvalue="JUnit.EsTest" />
         <item itemvalue="JUnit.EsTest.updateStuDoc" />
-        <item itemvalue="JUnit.EsTest.deleteIndexStu" />
-        <item itemvalue="JUnit.EsTest.createIndexStu" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +319,8 @@
       <workItem from="1603441096350" duration="2510000" />
       <workItem from="1604134087825" duration="32615000" />
       <workItem from="1604497298367" duration="5096000" />
-      <workItem from="1606117287885" duration="483000" />
+      <workItem from="1606117287885" duration="5634000" />
+      <workItem from="1606137239497" duration="16303000" />
     </task>
     <task id="LOCAL-00001" summary="增加sso elasticsearch">
       <created>1596041044245</created>
@@ -510,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596041044245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加api-controller&#10;增加esutil">
+      <created>1606117863860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606117863860</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,101 +344,137 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加sso elasticsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加sso elasticsearch" />
+    <MESSAGE value="增加api-controller&#10;增加esutil" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加api-controller&#10;增加esutil" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="218" key="#Inspections" timestamp="1603439203011">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="530" y="218" key="#Inspections/0.23.1792.1020@0.23.1792.1020" timestamp="1603439203011" />
-    <state x="496" y="196" key="#Project_Structure" timestamp="1603439135193">
-      <screen x="0" y="23" width="1792" height="1020" />
+    <state x="496" y="196" key="#Project_Structure" timestamp="1606204534084">
+      <screen x="0" y="23" width="1792" height="1022" />
     </state>
     <state x="496" y="196" key="#Project_Structure/0.23.1792.1020@0.23.1792.1020" timestamp="1603439135193" />
+    <state x="496" y="196" key="#Project_Structure/0.23.1792.1022@0.23.1792.1022" timestamp="1606204534084" />
+    <state x="496" y="197" key="#Project_Structure/0.23.1792.1026@0.23.1792.1026" timestamp="1606140945151" />
     <state x="637" y="407" key="#Updates" timestamp="1603292973885">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="637" y="407" key="#Updates/0.23.1792.1020@0.23.1792.1020" timestamp="1603292973885" />
-    <state x="360" y="195" width="1194" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596040129126">
-      <screen x="0" y="23" width="1792" height="1020" />
+    <state x="360" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606118398560">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
-    <state x="360" y="195" width="1194" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1596040129126" />
-    <state x="709" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1596924583147">
-      <screen x="0" y="23" width="1792" height="1020" />
+    <state x="360" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1606118398560" />
+    <state x="709" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1606137958036">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
-    <state x="709" y="237" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1020@0.23.1792.1020" timestamp="1596924583147" />
-    <state x="584" y="273" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596795954321">
-      <screen x="0" y="23" width="1792" height="1020" />
-    </state>
-    <state x="584" y="273" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1596795954321" />
+    <state x="709" y="246" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1026@0.23.1792.1026" timestamp="1606137958036" />
     <state x="634" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604134507490">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="634" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1604134507490" />
-    <state x="422" y="99" key="CommitChangelistDialog2" timestamp="1603442805676">
-      <screen x="0" y="23" width="1792" height="1020" />
+    <state x="422" y="100" key="CommitChangelistDialog2" timestamp="1606117863496">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state x="422" y="99" key="CommitChangelistDialog2/0.23.1792.1020@0.23.1792.1020" timestamp="1603442805676" />
-    <state width="1750" height="237" key="GridCell.Tab.0.bottom" timestamp="1606115911001">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state x="422" y="100" key="CommitChangelistDialog2/0.23.1792.1028@0.23.1792.1028" timestamp="1606117863496" />
+    <state x="446" y="198" key="GrepConsoleSettings" timestamp="1606118701931">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
-    <state width="1750" height="237" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1604498311434" />
-    <state width="1750" height="342" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161445" />
+    <state x="446" y="198" key="GrepConsoleSettings/0.23.1792.1028@0.23.1792.1028" timestamp="1606118701931" />
+    <state width="1325" height="267" key="GridCell.Tab.0.bottom" timestamp="1606359763582">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state width="1325" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="267" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350460" />
+    <state width="1325" height="267" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
+    <state width="1325" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390100" />
+    <state width="1325" height="277" key="GridCell.Tab.0.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737494" />
     <state width="1750" height="237" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1606115911001" />
-    <state width="1750" height="237" key="GridCell.Tab.0.center" timestamp="1606115910999">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1325" height="267" key="GridCell.Tab.0.center" timestamp="1606359763582">
+      <screen x="0" y="23" width="1792" height="1024" />
     </state>
-    <state width="1750" height="237" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1604498311433" />
-    <state width="1750" height="342" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161444" />
+    <state width="1325" height="273" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763147" />
+    <state width="1325" height="267" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350459" />
+    <state width="1325" height="267" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
+    <state width="1325" height="273" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390098" />
+    <state width="1325" height="277" key="GridCell.Tab.0.center/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737493" />
     <state width="1750" height="237" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1606115910999" />
-    <state width="1750" height="237" key="GridCell.Tab.0.left" timestamp="1606115910999">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1325" height="267" key="GridCell.Tab.0.left" timestamp="1606359763581">
+      <screen x="0" y="23" width="1792" height="1024" />
     </state>
-    <state width="1750" height="237" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1604498311433" />
-    <state width="1750" height="342" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161444" />
+    <state width="1325" height="273" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763146" />
+    <state width="1325" height="267" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350458" />
+    <state width="1325" height="267" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763581" />
+    <state width="1325" height="273" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390098" />
+    <state width="1325" height="277" key="GridCell.Tab.0.left/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737492" />
     <state width="1750" height="237" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1606115910999" />
-    <state width="1750" height="237" key="GridCell.Tab.0.right" timestamp="1606115911000">
-      <screen x="0" y="23" width="1792" height="1030" />
+    <state width="1325" height="267" key="GridCell.Tab.0.right" timestamp="1606359763582">
+      <screen x="0" y="23" width="1792" height="1024" />
     </state>
-    <state width="1750" height="237" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1604498311434" />
-    <state width="1750" height="342" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161444" />
+    <state width="1325" height="273" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763147" />
+    <state width="1325" height="267" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350459" />
+    <state width="1325" height="267" key="GridCell.Tab.0.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
+    <state width="1325" height="273" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390099" />
+    <state width="1325" height="277" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737494" />
     <state width="1750" height="237" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1606115911000" />
-    <state width="1750" height="342" key="GridCell.Tab.1.bottom" timestamp="1604497161446">
+    <state width="1325" height="267" key="GridCell.Tab.1.bottom" timestamp="1606359763583">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state width="1325" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763149" />
+    <state width="1325" height="267" key="GridCell.Tab.1.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350467" />
+    <state width="1325" height="267" key="GridCell.Tab.1.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763583" />
+    <state width="1325" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390103" />
+    <state width="1325" height="277" key="GridCell.Tab.1.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737497" />
+    <state width="1325" height="267" key="GridCell.Tab.1.center" timestamp="1606359763582">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state width="1325" height="273" key="GridCell.Tab.1.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="267" key="GridCell.Tab.1.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
+    <state width="1325" height="267" key="GridCell.Tab.1.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
+    <state width="1325" height="273" key="GridCell.Tab.1.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
+    <state width="1325" height="277" key="GridCell.Tab.1.center/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737495" />
+    <state width="1325" height="267" key="GridCell.Tab.1.left" timestamp="1606359763582">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state width="1325" height="273" key="GridCell.Tab.1.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="267" key="GridCell.Tab.1.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
+    <state width="1325" height="267" key="GridCell.Tab.1.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
+    <state width="1325" height="273" key="GridCell.Tab.1.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
+    <state width="1325" height="277" key="GridCell.Tab.1.left/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737495" />
+    <state width="1325" height="267" key="GridCell.Tab.1.right" timestamp="1606359763582">
+      <screen x="0" y="23" width="1792" height="1024" />
+    </state>
+    <state width="1325" height="273" key="GridCell.Tab.1.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="267" key="GridCell.Tab.1.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
+    <state width="1325" height="267" key="GridCell.Tab.1.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
+    <state width="1325" height="273" key="GridCell.Tab.1.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
+    <state width="1325" height="277" key="GridCell.Tab.1.right/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737496" />
+    <state width="1325" height="267" key="GridCell.Tab.2.bottom" timestamp="1606208350335">
       <screen x="0" y="23" width="1792" height="1022" />
     </state>
-    <state width="1750" height="342" key="GridCell.Tab.1.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1604238290151" />
-    <state width="1750" height="342" key="GridCell.Tab.1.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161446" />
-    <state width="1750" height="342" key="GridCell.Tab.1.center" timestamp="1604497161445">
+    <state width="1325" height="267" key="GridCell.Tab.2.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350335" />
+    <state width="1325" height="267" key="GridCell.Tab.2.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606201286410" />
+    <state width="1325" height="277" key="GridCell.Tab.2.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606143739013" />
+    <state width="1325" height="267" key="GridCell.Tab.2.center" timestamp="1606208350335">
       <screen x="0" y="23" width="1792" height="1022" />
     </state>
-    <state width="1750" height="342" key="GridCell.Tab.1.center/0.23.1792.1020@0.23.1792.1020" timestamp="1604238290151" />
-    <state width="1750" height="342" key="GridCell.Tab.1.center/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161445" />
-    <state width="1750" height="342" key="GridCell.Tab.1.left" timestamp="1604497161445">
+    <state width="1325" height="267" key="GridCell.Tab.2.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350335" />
+    <state width="1325" height="267" key="GridCell.Tab.2.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606201286409" />
+    <state width="1325" height="277" key="GridCell.Tab.2.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606143739012" />
+    <state width="1325" height="267" key="GridCell.Tab.2.left" timestamp="1606208350335">
       <screen x="0" y="23" width="1792" height="1022" />
     </state>
-    <state width="1750" height="342" key="GridCell.Tab.1.left/0.23.1792.1020@0.23.1792.1020" timestamp="1604238290150" />
-    <state width="1750" height="342" key="GridCell.Tab.1.left/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161445" />
-    <state width="1750" height="342" key="GridCell.Tab.1.right" timestamp="1604497161445">
+    <state width="1325" height="267" key="GridCell.Tab.2.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350335" />
+    <state width="1325" height="267" key="GridCell.Tab.2.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606201286409" />
+    <state width="1325" height="277" key="GridCell.Tab.2.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606143739012" />
+    <state width="1325" height="267" key="GridCell.Tab.2.right" timestamp="1606208350335">
       <screen x="0" y="23" width="1792" height="1022" />
     </state>
-    <state width="1750" height="342" key="GridCell.Tab.1.right/0.23.1792.1020@0.23.1792.1020" timestamp="1604238290151" />
-    <state width="1750" height="342" key="GridCell.Tab.1.right/0.23.1792.1022@0.23.1792.1022" timestamp="1604497161445" />
-    <state width="1325" height="277" key="GridCell.Tab.2.bottom" timestamp="1596040112510">
-      <screen x="0" y="23" width="1792" height="1020" />
-    </state>
-    <state width="1325" height="277" key="GridCell.Tab.2.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1596040112510" />
-    <state width="1325" height="277" key="GridCell.Tab.2.center" timestamp="1596040112510">
-      <screen x="0" y="23" width="1792" height="1020" />
-    </state>
-    <state width="1325" height="277" key="GridCell.Tab.2.center/0.23.1792.1020@0.23.1792.1020" timestamp="1596040112510" />
-    <state width="1325" height="277" key="GridCell.Tab.2.left" timestamp="1596040112510">
-      <screen x="0" y="23" width="1792" height="1020" />
-    </state>
-    <state width="1325" height="277" key="GridCell.Tab.2.left/0.23.1792.1020@0.23.1792.1020" timestamp="1596040112510" />
-    <state width="1325" height="277" key="GridCell.Tab.2.right" timestamp="1596040112510">
-      <screen x="0" y="23" width="1792" height="1020" />
-    </state>
-    <state width="1325" height="277" key="GridCell.Tab.2.right/0.23.1792.1020@0.23.1792.1020" timestamp="1596040112510" />
+    <state width="1325" height="267" key="GridCell.Tab.2.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350335" />
+    <state width="1325" height="267" key="GridCell.Tab.2.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606201286410" />
+    <state width="1325" height="277" key="GridCell.Tab.2.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606143739013" />
     <state x="484" y="275" key="IDE.errors.dialog" timestamp="1604135753533">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
@@ -621,36 +483,46 @@
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="397" y="170" key="SettingsEditor/0.23.1792.1020@0.23.1792.1020" timestamp="1604159247172" />
-    <state x="496" y="273" key="Vcs.Push.Dialog.v2" timestamp="1596041261397">
-      <screen x="0" y="23" width="1792" height="1020" />
+    <state x="496" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606117867661">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
-    <state x="496" y="273" key="Vcs.Push.Dialog.v2/0.23.1792.1020@0.23.1792.1020" timestamp="1596041261397" />
-    <state x="711" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596184933284">
-      <screen x="0" y="23" width="1792" height="1022" />
+    <state x="496" y="273" key="Vcs.Push.Dialog.v2/0.23.1792.1028@0.23.1792.1028" timestamp="1606117867661" />
+    <state x="439" y="276" width="913" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606118688058">
+      <screen x="0" y="23" width="1792" height="1028" />
     </state>
-    <state x="711" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1020@0.23.1792.1020" timestamp="1596161491431" />
-    <state x="711" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1022@0.23.1792.1022" timestamp="1596184933284" />
-    <state x="263" y="196" width="1276" height="674" key="new project wizard" timestamp="1596039766359">
-      <screen x="0" y="23" width="1792" height="1020" />
-    </state>
-    <state x="263" y="196" width="1276" height="674" key="new project wizard/0.23.1792.1020@0.23.1792.1020" timestamp="1596039766359" />
+    <state x="439" y="276" width="913" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1792.1028@0.23.1792.1028" timestamp="1606118688058" />
     <state x="561" y="246" width="670" height="674" key="run.anything.popup" timestamp="1604235131172">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="561" y="246" width="670" height="674" key="run.anything.popup/0.23.1792.1020@0.23.1792.1020" timestamp="1604235131172" />
-    <state x="561" y="249" width="670" height="680" key="search.everywhere.popup" timestamp="1604648046392">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="561" y="248" width="670" height="677" key="search.everywhere.popup" timestamp="1606205683470">
+      <screen x="0" y="23" width="1792" height="1022" />
     </state>
     <state x="561" y="247" width="670" height="674" key="search.everywhere.popup/0.23.1792.1020@0.23.1792.1020" timestamp="1604239537270" />
+    <state x="561" y="248" width="670" height="677" key="search.everywhere.popup/0.23.1792.1022@0.23.1792.1022" timestamp="1606205683470" />
+    <state x="561" y="249" width="670" height="679" key="search.everywhere.popup/0.23.1792.1026@0.23.1792.1026" timestamp="1606141233913" />
     <state x="561" y="249" width="670" height="680" key="search.everywhere.popup/0.23.1792.1028@0.23.1792.1028" timestamp="1604648046392" />
     <state x="561" y="249" width="670" height="681" key="search.everywhere.popup/0.23.1792.1030@0.23.1792.1030" timestamp="1604646196278" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.ConnectException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.sr.pojo.ElasticEntity" memberName="data" />
         <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/foodie$EsTest_createIndex.ic" NAME="EsTest.createIndex Coverage Results" MODIFIED="1606143717052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.test.*</FILTER>
+    </SUITE>
   </component>
 </project>

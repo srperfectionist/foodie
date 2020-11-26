@@ -3,7 +3,10 @@ package com.sr.util;
 import com.google.common.collect.Lists;
 import com.sr.pojo.ElasticEntity;
 import com.sr.utils.JSONUtil;
+import com.sr.utils.PageGridResult;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.lucene.search.TotalHits;
 import org.elasticsearch.action.DocWriteResponse;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkItemResponse;
@@ -36,6 +39,7 @@ import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -173,15 +177,15 @@ public class ElasticsearchUtil {
      * @param indexName
      * @param fieldName
      * @param keyword
-     * @param pageNum
+     * @param page
      * @param pageSize
      * @return
      * @throws IOException
      */
-    public List<Map<String, Object>> searchPageHighLight(String indexName, String fieldName, String keyword, Integer pageNum, Integer pageSize) throws IOException {
+    public PageGridResult searchPageHighLight(String indexName, String fieldName, String keyword, Integer page, Integer pageSize) throws IOException {
         if (!existIndex(indexName)){
             log.info("{}索引不存在", indexName);
-            return Lists.newArrayList();
+            return PageGridResult.builder().build();
         }
         if (pageSize == 0){
             pageSize = 10;
@@ -197,7 +201,7 @@ public class ElasticsearchUtil {
         highlightBuilder.postTags("</span>");
         // 指定检索条件
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
-        sourceBuilder.from(pageNum);
+        sourceBuilder.from(page);
         sourceBuilder.size(pageSize);
         sourceBuilder.timeout(new TimeValue(60, TimeUnit.SECONDS));
         sourceBuilder.query(QueryBuilders.multiMatchQuery(keyword,fieldName));
@@ -206,7 +210,7 @@ public class ElasticsearchUtil {
         searchRequest.source(sourceBuilder);
         SearchResponse response = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
         SearchHit[] hits = response.getHits().getHits();
-
+        TotalHits totalHits = response.getHits().getTotalHits();
         List<Map<String, Object>> resultList = Lists.newArrayList();
         for (SearchHit hit : hits) {
             // 解析高亮字段
@@ -227,7 +231,7 @@ public class ElasticsearchUtil {
             }
             resultList.add(sourceAsMap);
         }
-        return resultList;
+        return PageGridResult.builder().page(page).total(resultList.size()).records(Long.valueOf(response.getHits().getTotalHits().value)).rows(resultList).build();
     }
 
     /**
@@ -235,17 +239,17 @@ public class ElasticsearchUtil {
      * @param indexName
      * @param fieldName
      * @param keyword
-     * @param pageNum
+     * @param page
      * @param pageSize
      * @param clazz
      * @param <T>
      * @return
      * @throws IOException
      */
-    public <T> List<T> searchPageHighLight(String indexName, String fieldName, String keyword, Integer pageNum, Integer pageSize, Class<T> clazz) throws IOException {
+    public <T> PageGridResult searchPageHighLight(String indexName, String fieldName, String keyword, Integer page, Integer pageSize, String sortName, String sort, Class<T> clazz) throws IOException {
         if (!existIndex(indexName)){
             log.info("{}索引不存在", indexName);
-            return Lists.newArrayList();
+            return PageGridResult.builder().build();
         }
         if (pageSize == 0){
             pageSize = 10;
@@ -257,14 +261,18 @@ public class ElasticsearchUtil {
         // 如果该属性中有多个关键字 则都高亮
         highlightBuilder.requireFieldMatch(true);
         highlightBuilder.field(fieldName);
-        highlightBuilder.preTags("<span style='color:red'>");
-        highlightBuilder.postTags("</span>");
+        // 自定义样式 返回em
+//        highlightBuilder.preTags("<span style='color:red'>");
+//        highlightBuilder.postTags("</span>");
         // 指定检索条件
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
-        sourceBuilder.from(pageNum);
+        sourceBuilder.from(page * pageSize);
         sourceBuilder.size(pageSize);
         sourceBuilder.timeout(new TimeValue(60, TimeUnit.SECONDS));
         sourceBuilder.query(QueryBuilders.multiMatchQuery(keyword,fieldName));
+        if (!StringUtils.equals("", sortName)){
+            sourceBuilder.sort(sortName, StringUtils.equalsIgnoreCase(sort, SortOrder.ASC.toString()) ? SortOrder.ASC : SortOrder.DESC);
+        }
         sourceBuilder.highlighter(highlightBuilder);
         // 开始检索
         searchRequest.source(sourceBuilder);
@@ -286,15 +294,18 @@ public class ElasticsearchUtil {
                 for (Text fragment : fragments) {
                     stringBuilder.append(fragment);
                 }
-                stringBuilder.setLength(0);
+
                 // 将高亮后的值替换掉旧值
-                sourceAsMap.put("highLight", stringBuilder.toString());
+                sourceAsMap.put(fieldName, stringBuilder.toString());
                 String json = JSONUtil.objToString(sourceAsMap);
                 T t = JSONUtil.stringToObject(json, clazz);
                 resultList.add(t);
+                stringBuilder.setLength(0);
             }
         }
-        return resultList;
+
+        PageGridResult pageGridResult = PageGridResult.builder().page(page + 1).total(resultList.size()).records(Long.valueOf(response.getHits().getTotalHits().value)).rows(resultList).build();
+        return pageGridResult;
     }
 
     /**
