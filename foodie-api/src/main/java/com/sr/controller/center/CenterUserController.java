@@ -1,4 +1,4 @@
-package com.sr.center;
+package com.sr.controller.center;
 
 import com.google.common.base.Splitter;
 import com.sr.pojo.Users;

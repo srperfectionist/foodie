@@ -1,4 +1,4 @@
-package com.sr.center;
+package com.sr.controller.center;
 
 import com.sr.pojo.Users;
 import com.sr.service.center.ICenterUserService;
