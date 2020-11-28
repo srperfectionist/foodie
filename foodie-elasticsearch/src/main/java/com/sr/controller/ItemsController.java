@@ -33,9 +33,9 @@ public class ItemsController {
     @GetMapping("/search")
     public ServerResponse search(
             @ApiParam(name = "keywords", value = "关键字", required = true)
-            String keywords,
+            @RequestParam(name = "keywords") String keywords,
             @ApiParam(name = "排序", value = "排序", required = false)
-            String sort,
+            @RequestParam(name = "sort") String sort,
             @ApiParam(name = "page", value = "page", required = false)
             @RequestParam(name = "page", defaultValue = "1") Integer page,
             @ApiParam(name = "pageSize", value = "pageSize", required = false)
