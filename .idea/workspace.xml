@@ -8,50 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="增加sso elasticsearch">
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/controller/ItemsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/pojo/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/service/IItemsESService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/service/impl/ItemsESServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error/2020-05-30/error.0.log.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-10-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-11-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-12-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-14-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-15-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-16-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-17-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-18-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-24-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-25-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-26-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-27-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-04-28-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-05-01-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-05-02-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-05-03-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-05-11-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-05-21-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-07-21-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-2020-07-22-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso-2020-05-19-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso-2020-05-21-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso-2020-05-23-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso-2020-05-30-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso-2020-05-31-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso-2020-06-03-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie-sso.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/foodie.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/trace.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn/2020-05-30/warn.0.log.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn/2020-05-31/warn.0.log.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/warn/2020-07-22/warn.0.log.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/util/ElasticsearchUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/util/ElasticsearchUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/ElasticSearchApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +44,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZZserXUauqPDSPHC3qHMK5dkCw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -140,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.ElasticSearchApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -238,7 +198,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ElasticSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="foodie-elasticsearch" />
       <extension name="coverage">
         <pattern>
@@ -246,14 +206,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.ElasticSearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.EsTest" />
+      <item itemvalue="JUnit.EsTest.updateStuDoc" />
+      <item itemvalue="JUnit.EsTest.createIndex" />
+      <item itemvalue="Maven.foodie [install]" />
+      <item itemvalue="Spring Boot.Application (1)" />
+      <item itemvalue="Spring Boot.ElasticSearchApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.ElasticSearchApplication" />
         <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="JUnit.EsTest.createIndex" />
         <item itemvalue="JUnit.EsTest" />
@@ -362,9 +330,10 @@
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="637" y="407" key="#Updates/0.23.1792.1020@0.23.1792.1020" timestamp="1603292973885" />
-    <state x="360" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606118398560">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="360" y="194" width="1206" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606663727483">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
+    <state x="360" y="194" width="1206" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1606663727483" />
     <state x="360" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1606118398560" />
     <state x="709" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1606137958036">
       <screen x="0" y="23" width="1792" height="1026" />
@@ -383,70 +352,70 @@
       <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state x="446" y="198" key="GrepConsoleSettings/0.23.1792.1028@0.23.1792.1028" timestamp="1606118701931" />
-    <state width="1325" height="267" key="GridCell.Tab.0.bottom" timestamp="1606359763582">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.0.bottom" timestamp="1606663835304">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="266" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835304" />
     <state width="1325" height="267" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350460" />
     <state width="1325" height="267" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390100" />
     <state width="1325" height="277" key="GridCell.Tab.0.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737494" />
     <state width="1750" height="237" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1606115911001" />
-    <state width="1325" height="267" key="GridCell.Tab.0.center" timestamp="1606359763582">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.0.center" timestamp="1606663835303">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763147" />
+    <state width="1325" height="266" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835303" />
     <state width="1325" height="267" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350459" />
     <state width="1325" height="267" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390098" />
     <state width="1325" height="277" key="GridCell.Tab.0.center/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737493" />
     <state width="1750" height="237" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1606115910999" />
-    <state width="1325" height="267" key="GridCell.Tab.0.left" timestamp="1606359763581">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.0.left" timestamp="1606663835303">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763146" />
+    <state width="1325" height="266" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835303" />
     <state width="1325" height="267" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350458" />
     <state width="1325" height="267" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763581" />
     <state width="1325" height="273" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390098" />
     <state width="1325" height="277" key="GridCell.Tab.0.left/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737492" />
     <state width="1750" height="237" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1606115910999" />
-    <state width="1325" height="267" key="GridCell.Tab.0.right" timestamp="1606359763582">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.0.right" timestamp="1606663835304">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763147" />
+    <state width="1325" height="266" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835304" />
     <state width="1325" height="267" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350459" />
     <state width="1325" height="267" key="GridCell.Tab.0.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390099" />
     <state width="1325" height="277" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737494" />
     <state width="1750" height="237" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1606115911000" />
-    <state width="1325" height="267" key="GridCell.Tab.1.bottom" timestamp="1606359763583">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.1.bottom" timestamp="1606663835305">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763149" />
+    <state width="1325" height="266" key="GridCell.Tab.1.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835305" />
     <state width="1325" height="267" key="GridCell.Tab.1.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350467" />
     <state width="1325" height="267" key="GridCell.Tab.1.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763583" />
     <state width="1325" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390103" />
     <state width="1325" height="277" key="GridCell.Tab.1.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737497" />
-    <state width="1325" height="267" key="GridCell.Tab.1.center" timestamp="1606359763582">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.1.center" timestamp="1606663835305">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.1.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="266" key="GridCell.Tab.1.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835305" />
     <state width="1325" height="267" key="GridCell.Tab.1.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
     <state width="1325" height="267" key="GridCell.Tab.1.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.1.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
     <state width="1325" height="277" key="GridCell.Tab.1.center/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737495" />
-    <state width="1325" height="267" key="GridCell.Tab.1.left" timestamp="1606359763582">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.1.left" timestamp="1606663835304">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.1.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="266" key="GridCell.Tab.1.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835304" />
     <state width="1325" height="267" key="GridCell.Tab.1.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
     <state width="1325" height="267" key="GridCell.Tab.1.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.1.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
     <state width="1325" height="277" key="GridCell.Tab.1.left/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737495" />
-    <state width="1325" height="267" key="GridCell.Tab.1.right" timestamp="1606359763582">
-      <screen x="0" y="23" width="1792" height="1024" />
+    <state width="1325" height="266" key="GridCell.Tab.1.right" timestamp="1606663835305">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="273" key="GridCell.Tab.1.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606182763148" />
+    <state width="1325" height="266" key="GridCell.Tab.1.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835305" />
     <state width="1325" height="267" key="GridCell.Tab.1.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
     <state width="1325" height="267" key="GridCell.Tab.1.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.1.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
