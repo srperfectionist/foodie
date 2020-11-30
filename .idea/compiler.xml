@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="foodie-service" />
         <module name="foodie-es" />
+        <module name="foodie-fastdfs-oss" />
         <module name="foodie-mapper" />
         <module name="foodie-api" />
         <module name="foodie-pojo" />
@@ -19,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="13">
       <module name="foodie-es" target="13" />
+      <module name="foodie-fastdfs-oos" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +29,7 @@
       <module name="foodie-common" options="-parameters" />
       <module name="foodie-elasticsearch" options="-parameters" />
       <module name="foodie-es" options="-parameters" />
+      <module name="foodie-fastdfs-oss" options="-parameters" />
       <module name="foodie-mapper" options="-parameters" />
       <module name="foodie-pojo" options="-parameters" />
       <module name="foodie-service" options="-parameters" />

@@ -15,6 +15,7 @@
         <module>foodie-api</module>
         <module>foodie-sso</module>
         <module>foodie-elasticsearch</module>
+        <module>foodie-fastdfs-oss</module>
     </modules>
 
     <packaging>pom</packaging>

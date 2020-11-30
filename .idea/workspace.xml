@@ -7,10 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="增加sso elasticsearch">
+    <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr/FastDFSOSSApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr/controller/CenterUserFDFSController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr/resource/FileResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr/service/IFdfsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr/service/impl/FdfsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/resources/application-devfile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/resources/logback-springdev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/main/java/com/sr/ElasticSearchApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-elasticsearch/src/test/java/com/test/EsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/foodie-es/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,10 +99,11 @@
       <recent name="com.sr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr" />
+      <recent name="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/resources" />
       <recent name="$PROJECT_DIR$/foodie-es/src/main/resources" />
       <recent name="$PROJECT_DIR$/foodie-sso/src/main/java/com/sr" />
       <recent name="$PROJECT_DIR$/foodie-sso/src/main/resources" />
-      <recent name="$PROJECT_DIR$/foodie-common/src/main/java/com/sr/utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ElasticSearchApplication">
+  <component name="RunManager" selected="Spring Boot.FastDFSOSSApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -108,53 +121,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="foodie-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.EsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EsTest.createIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="foodie-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.EsTest" />
-      <option name="METHOD_NAME" value="createIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EsTest.updateStuDoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="foodie-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.EsTest" />
-      <option name="METHOD_NAME" value="updateStuDoc" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,25 +220,35 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.ElasticSearchApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastDFSOSSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="foodie-fastdfs-oss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.FastDFSOSSApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.EsTest" />
-      <item itemvalue="JUnit.EsTest.updateStuDoc" />
-      <item itemvalue="JUnit.EsTest.createIndex" />
       <item itemvalue="Maven.foodie [install]" />
       <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Spring Boot.ElasticSearchApplication" />
+      <item itemvalue="Spring Boot.FastDFSOSSApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.FastDFSOSSApplication" />
         <item itemvalue="Spring Boot.ElasticSearchApplication" />
         <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="JUnit.EsTest.createIndex" />
-        <item itemvalue="JUnit.EsTest" />
-        <item itemvalue="JUnit.EsTest.updateStuDoc" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +327,28 @@
       <option name="project" value="LOCAL" />
       <updated>1606117863860</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加spring-boot-test.jar">
+      <created>1606722735753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606722735753</updated>
+    </task>
+    <task id="LOCAL-00004" summary="去掉spring-boot引用">
+      <created>1606722785697</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606722785697</updated>
+    </task>
+    <task id="LOCAL-00005" summary="elasticserach 配置文件修改">
+      <created>1606722899986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606722899986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +357,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加sso elasticsearch" />
     <MESSAGE value="增加api-controller&#10;增加esutil" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加api-controller&#10;增加esutil" />
+    <MESSAGE value="增加spring-boot-test.jar" />
+    <MESSAGE value="去掉spring-boot引用" />
+    <MESSAGE value="elasticserach 配置文件修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="elasticserach 配置文件修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="218" key="#Inspections" timestamp="1603439203011">
@@ -377,92 +377,97 @@
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="637" y="407" key="#Updates/0.23.1792.1020@0.23.1792.1020" timestamp="1603292973885" />
-    <state x="360" y="194" width="1206" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606663727483">
+    <state x="360" y="194" width="1206" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606722947818">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state x="360" y="194" width="1206" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1606663727483" />
+    <state x="360" y="194" width="1206" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1606722947818" />
     <state x="360" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1606118398560" />
-    <state x="709" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1606137958036">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state x="709" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1606723910440">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
+    <state x="709" y="245" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1020@0.23.1792.1020" timestamp="1606723910440" />
     <state x="709" y="246" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1026@0.23.1792.1026" timestamp="1606137958036" />
     <state x="634" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604134507490">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="634" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1604134507490" />
-    <state x="422" y="100" key="CommitChangelistDialog2" timestamp="1606117863496">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="422" y="99" key="CommitChangelistDialog2" timestamp="1606722899832">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state x="422" y="99" key="CommitChangelistDialog2/0.23.1792.1020@0.23.1792.1020" timestamp="1603442805676" />
+    <state x="422" y="99" key="CommitChangelistDialog2/0.23.1792.1020@0.23.1792.1020" timestamp="1606722899832" />
     <state x="422" y="100" key="CommitChangelistDialog2/0.23.1792.1028@0.23.1792.1028" timestamp="1606117863496" />
+    <state x="100" y="123" width="1592" height="817" key="DiffContextDialog" timestamp="1606722935160">
+      <screen x="0" y="23" width="1792" height="1020" />
+    </state>
+    <state x="100" y="123" width="1592" height="817" key="DiffContextDialog/0.23.1792.1020@0.23.1792.1020" timestamp="1606722935160" />
     <state x="446" y="198" key="GrepConsoleSettings" timestamp="1606118701931">
       <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state x="446" y="198" key="GrepConsoleSettings/0.23.1792.1028@0.23.1792.1028" timestamp="1606118701931" />
-    <state width="1325" height="266" key="GridCell.Tab.0.bottom" timestamp="1606663835304">
+    <state width="1325" height="265" key="GridCell.Tab.0.bottom" timestamp="1606746159505">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835304" />
+    <state width="1325" height="265" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159505" />
     <state width="1325" height="267" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350460" />
     <state width="1325" height="267" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390100" />
     <state width="1325" height="277" key="GridCell.Tab.0.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737494" />
     <state width="1750" height="237" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1606115911001" />
-    <state width="1325" height="266" key="GridCell.Tab.0.center" timestamp="1606663835303">
+    <state width="1325" height="265" key="GridCell.Tab.0.center" timestamp="1606746159504">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835303" />
+    <state width="1325" height="265" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159504" />
     <state width="1325" height="267" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350459" />
     <state width="1325" height="267" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390098" />
     <state width="1325" height="277" key="GridCell.Tab.0.center/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737493" />
     <state width="1750" height="237" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1606115910999" />
-    <state width="1325" height="266" key="GridCell.Tab.0.left" timestamp="1606663835303">
+    <state width="1325" height="265" key="GridCell.Tab.0.left" timestamp="1606746159503">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835303" />
+    <state width="1325" height="265" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159503" />
     <state width="1325" height="267" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350458" />
     <state width="1325" height="267" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763581" />
     <state width="1325" height="273" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390098" />
     <state width="1325" height="277" key="GridCell.Tab.0.left/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737492" />
     <state width="1750" height="237" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1606115910999" />
-    <state width="1325" height="266" key="GridCell.Tab.0.right" timestamp="1606663835304">
+    <state width="1325" height="265" key="GridCell.Tab.0.right" timestamp="1606746159504">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835304" />
+    <state width="1325" height="265" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159504" />
     <state width="1325" height="267" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350459" />
     <state width="1325" height="267" key="GridCell.Tab.0.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390099" />
     <state width="1325" height="277" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737494" />
     <state width="1750" height="237" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1606115911000" />
-    <state width="1325" height="266" key="GridCell.Tab.1.bottom" timestamp="1606663835305">
+    <state width="1325" height="265" key="GridCell.Tab.1.bottom" timestamp="1606746159506">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.1.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835305" />
+    <state width="1325" height="265" key="GridCell.Tab.1.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159506" />
     <state width="1325" height="267" key="GridCell.Tab.1.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350467" />
     <state width="1325" height="267" key="GridCell.Tab.1.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763583" />
     <state width="1325" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390103" />
     <state width="1325" height="277" key="GridCell.Tab.1.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737497" />
-    <state width="1325" height="266" key="GridCell.Tab.1.center" timestamp="1606663835305">
+    <state width="1325" height="265" key="GridCell.Tab.1.center" timestamp="1606746159505">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.1.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835305" />
+    <state width="1325" height="265" key="GridCell.Tab.1.center/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159505" />
     <state width="1325" height="267" key="GridCell.Tab.1.center/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
     <state width="1325" height="267" key="GridCell.Tab.1.center/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.1.center/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
     <state width="1325" height="277" key="GridCell.Tab.1.center/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737495" />
-    <state width="1325" height="266" key="GridCell.Tab.1.left" timestamp="1606663835304">
+    <state width="1325" height="265" key="GridCell.Tab.1.left" timestamp="1606746159505">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.1.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835304" />
+    <state width="1325" height="265" key="GridCell.Tab.1.left/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159505" />
     <state width="1325" height="267" key="GridCell.Tab.1.left/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
     <state width="1325" height="267" key="GridCell.Tab.1.left/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.1.left/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
     <state width="1325" height="277" key="GridCell.Tab.1.left/0.23.1792.1028@0.23.1792.1028" timestamp="1606118737495" />
-    <state width="1325" height="266" key="GridCell.Tab.1.right" timestamp="1606663835305">
+    <state width="1325" height="265" key="GridCell.Tab.1.right" timestamp="1606746159505">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
-    <state width="1325" height="266" key="GridCell.Tab.1.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606663835305" />
+    <state width="1325" height="265" key="GridCell.Tab.1.right/0.23.1792.1020@0.23.1792.1020" timestamp="1606746159505" />
     <state width="1325" height="267" key="GridCell.Tab.1.right/0.23.1792.1022@0.23.1792.1022" timestamp="1606208350466" />
     <state width="1325" height="267" key="GridCell.Tab.1.right/0.23.1792.1024@0.23.1792.1024" timestamp="1606359763582" />
     <state width="1325" height="273" key="GridCell.Tab.1.right/0.23.1792.1026@0.23.1792.1026" timestamp="1606146390102" />
@@ -499,14 +504,19 @@
       <screen x="0" y="23" width="1792" height="1020" />
     </state>
     <state x="397" y="170" key="SettingsEditor/0.23.1792.1020@0.23.1792.1020" timestamp="1604159247172" />
-    <state x="496" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606117867661">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="496" y="271" key="Vcs.Push.Dialog.v2" timestamp="1606722789076">
+      <screen x="0" y="23" width="1792" height="1020" />
     </state>
+    <state x="496" y="271" key="Vcs.Push.Dialog.v2/0.23.1792.1020@0.23.1792.1020" timestamp="1606722789076" />
     <state x="496" y="273" key="Vcs.Push.Dialog.v2/0.23.1792.1028@0.23.1792.1028" timestamp="1606117867661" />
     <state x="439" y="276" width="913" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606118688058">
       <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state x="439" y="276" width="913" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1792.1028@0.23.1792.1028" timestamp="1606118688058" />
+    <state x="531" y="194" key="new project wizard" timestamp="1606723252558">
+      <screen x="0" y="23" width="1792" height="1020" />
+    </state>
+    <state x="531" y="194" key="new project wizard/0.23.1792.1020@0.23.1792.1020" timestamp="1606723252558" />
     <state x="561" y="246" width="670" height="674" key="run.anything.popup" timestamp="1604235131172">
       <screen x="0" y="23" width="1792" height="1020" />
     </state>

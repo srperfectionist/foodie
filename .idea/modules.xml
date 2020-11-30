@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/foodie-es/foodie-es.iml" filepath="$PROJECT_DIR$/foodie-es/foodie-es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/foodie-fastdfs-oos/foodie-fastdfs-oos.iml" filepath="$PROJECT_DIR$/foodie-fastdfs-oos/foodie-fastdfs-oos.iml" />
     </modules>
   </component>
 </project>
