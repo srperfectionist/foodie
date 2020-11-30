@@ -17,10 +17,6 @@ spring:
       pool-name: DateSourceHikariCP   # 连接池名字
       max-lifetime: 1800000           # 连接的生命时长（毫秒），超时而且没被使用则被释放（retired），默认:30分钟 1800000ms
       connection-test-query: SELECT 1
-  redis:                          # redis集群配置
-    password: 123456
-    cluster:
-      nodes: 172.16.57.140:6379,172.16.57.141:6379,172.16.57.142:6379,172.16.57.143:6379,172.16.57.144:6379,172.16.57.145:6379
 
 elasticsearch:
   hosts: 172.16.57.147:9200,172.16.57.148:9200,172.16.57.149:9200

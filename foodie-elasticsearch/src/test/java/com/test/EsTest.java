@@ -1,5 +1,6 @@
 package com.test;
 
+import com.sr.ElasticSearchApplication;
 import com.sr.util.ElasticsearchUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +15,7 @@ import java.io.IOException;
  * @date 2020/7/31
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ElasticsearchUtil.class)
+@SpringBootTest(classes = ElasticSearchApplication.class)
 public class EsTest {
 
     @Autowired
