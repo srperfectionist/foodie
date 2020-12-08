@@ -1,8 +1,8 @@
 file:
   host: http://172.16.57.152:8888/
-  endpoint: oss-cn-beijing.aliyuncs.com
-  accessKeyId: LTAI4G5rY9g3q3FwW4cP9miA
-  accessKeySecret: WKtuW9KhXOYRCcDgIjy1P7BYYVkCjo
-  bucketName: foodie-test
-  objectName: foodie/images
-  ossHost: https://foodie-test.oss-cn-beijing.aliyuncs.com/
+  endpoint:
+  accessKeyId:
+  accessKeySecret:
+  bucketName:
+  objectName:
+  ossHost:
