@@ -13,8 +13,42 @@ server:
 ############################################################
 spring:
   datasource:                                           # 数据源的相关配置
+    type: com.alibaba.druid.pool.DruidDataSource        # 数据源类型：Druid
+    driver-class-name: com.mysql.cj.jdbc.Driver         # mysql驱动
     url: jdbc:mysql://localhost:3306/foodie?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=UTC
+    username: root
     password: root
+    druid:
+      initial-size: 5                                   # 初始化的物理连接个数
+      max-active: 100                                   # 最大连接数
+      min-idle: 5                                       # 最小连接数
+      time-between-eviction-runs-millis: 60000          # 间隔多久进行一次检查，检测需要关闭的空闲连接。单位：毫秒
+      min-evictable-idle-time-millis: 30000             # 一个连接在连接池中最小的生存的时间。单位：毫秒
+      filters: stat,wall,slf4j                          # 监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      validation-query: select 'x'                      # 检测是否是有效sql，必须是一个查询语句
+      test-while-idle: true                             # 设置从连接池获取链接时是否检查链接的有效性，true：超过minEvictableIdleTimeMills进行检查，否则不检查，false：不检查
+      test-on-borrow: false                             # 从连接池获取链接时检查链接的有效性
+      test-on-return: false                             # 往连接池归还连接时检查链接的有效性
+      pool-prepared-statements: true                    # 打开PSCache，并且指定每个连接上PSCache的大小
+      max-open-prepared-statements: 50                  # 设置PSCache大小
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      filter:
+        stat:
+          log-slow-sql: true                            # 是否开启慢sql查询监控
+          slow-sql-millis: 60000                        # 慢sql执行时间
+      stat-view-servlet:
+        login-username: admin                           # 监控页面访问登录名称
+        login-password: admin                           # 监控页面访问登录密码
+        enabled: true                                   # 是否启用StatViewServlet（监控页面）默认值为false（考虑到安全问题默认并未启动，如需启用建议设置密码或白名单以保障安全）
+        url-pattern: '/druid/*'
+        allow: 127.0.0.1,192.168.0.1                    # IP白名单(没有配置或者为空，则允许所有访问)
+        deny: 192.168.0.128                             # IP黑名单 (存在共同时，deny优先于allow)
+        reset-enable: false                             # 禁用HTML页面上的“Reset All”功能
+      web-stat-filter:                                  # 配置DruidStatFilter
+        enabled: true
+        url-pattern: '/*'
+        exclusions: '*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*'
+
   redis:                          # redis集群配置
     password: 123456
     cluster:
