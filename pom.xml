@@ -16,6 +16,7 @@
         <module>foodie-sso</module>
         <module>foodie-elasticsearch</module>
         <module>foodie-fastdfs-oss</module>
+        <module>foodie-rabbitmq</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -177,6 +178,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.2.4</version>
+        </dependency>
+
+        <!-- rabbitmq -->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.10.0</version>
         </dependency>
 
         <!-- 打包war [3] 添加依赖 -->

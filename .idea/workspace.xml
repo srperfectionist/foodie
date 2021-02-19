@@ -8,9 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,14 +105,42 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Receiver">
+    <configuration name="Receiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sr.rabbitmq.api.helloworld.Receiver" />
+      <module name="foodie-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sr.rabbitmq.api.helloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sr.rabbitmq.api.helloworld.Sender" />
+      <module name="foodie-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sr.rabbitmq.api.helloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,6 +212,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Sender" />
+      <item itemvalue="Application.Receiver" />
       <item itemvalue="Maven.foodie [install]" />
       <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Spring Boot.ElasticSearchApplication" />
@@ -188,9 +221,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Application.Receiver" />
+        <item itemvalue="Application.Sender" />
         <item itemvalue="Spring Boot.FastDFSOSSApplication" />
         <item itemvalue="Spring Boot.ElasticSearchApplication" />
+        <item itemvalue="Spring Boot.Application (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +292,11 @@
       <workItem from="1606925605623" duration="109000" />
       <workItem from="1606925732007" duration="2046000" />
       <workItem from="1608196107366" duration="52000" />
-      <workItem from="1608196170905" duration="3940000" />
+      <workItem from="1608196170905" duration="5178000" />
+      <workItem from="1611803514668" duration="50000" />
+      <workItem from="1611803568207" duration="597000" />
+      <workItem from="1611804290860" duration="648000" />
+      <workItem from="1612103010460" duration="9920000" />
     </task>
     <task id="LOCAL-00001" summary="增加sso elasticsearch">
       <created>1596041044245</created>
@@ -308,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607395783856</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="使用druid连接池">
+      <created>1608279710120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608279710120</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +368,8 @@
     <MESSAGE value="elasticserach 配置文件修改" />
     <MESSAGE value="增加fastdfs和oss" />
     <MESSAGE value="修改配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改配置文件" />
+    <MESSAGE value="使用druid连接池" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用druid连接池" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

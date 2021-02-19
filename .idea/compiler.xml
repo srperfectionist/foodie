@@ -8,13 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="foodie-service" />
-        <module name="foodie-es" />
         <module name="foodie-fastdfs-oss" />
         <module name="foodie-mapper" />
         <module name="foodie-api" />
         <module name="foodie-pojo" />
         <module name="foodie-elasticsearch" />
         <module name="foodie-common" />
+        <module name="foodie-rabbitmq" />
         <module name="foodie-sso" />
       </profile>
     </annotationProcessing>
@@ -32,6 +32,7 @@
       <module name="foodie-fastdfs-oss" options="-parameters" />
       <module name="foodie-mapper" options="-parameters" />
       <module name="foodie-pojo" options="-parameters" />
+      <module name="foodie-rabbitmq" options="-parameters" />
       <module name="foodie-service" options="-parameters" />
       <module name="foodie-sso" options="-parameters" />
     </option>
