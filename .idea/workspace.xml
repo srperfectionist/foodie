@@ -7,14 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="b88c1d41-0507-422e-9eee-a5cd65d5736f" name="Default Changelist" comment="增加rabbitmq 增加rabbitmq例子">
+      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/RabbitMQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/resources/logback-springdev.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-rabbitmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-rabbitmq/src/main/java/com/sr/rabbitmq/api/helloworld/Sender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/foodie-rabbitmq/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +82,13 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foodie-rabbitmq/src/main/resources" />
+      <recent name="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr" />
+      <recent name="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/resources" />
+      <recent name="$PROJECT_DIR$/foodie-es/src/main/resources" />
+      <recent name="$PROJECT_DIR$/foodie-sso/src/main/java/com/sr" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -89,13 +96,6 @@
       <recent name="com.sr.config" />
       <recent name="com.sr.controller" />
       <recent name="com.sr" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/java/com/sr" />
-      <recent name="$PROJECT_DIR$/foodie-fastdfs-oss/src/main/resources" />
-      <recent name="$PROJECT_DIR$/foodie-es/src/main/resources" />
-      <recent name="$PROJECT_DIR$/foodie-sso/src/main/java/com/sr" />
-      <recent name="$PROJECT_DIR$/foodie-sso/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -105,7 +105,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Receiver">
+  <component name="RunManager" selected="Spring Boot.RabbitMQApplication">
     <configuration name="Receiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sr.rabbitmq.api.helloworld.Receiver" />
       <module name="foodie-rabbitmq" />
@@ -132,15 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,19 +169,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="foodie-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ElasticSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="foodie-elasticsearch" />
       <extension name="coverage">
@@ -211,21 +196,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RabbitMQApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="foodie-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sr.RabbitMQApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Sender" />
       <item itemvalue="Application.Receiver" />
       <item itemvalue="Maven.foodie [install]" />
-      <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Spring Boot.ElasticSearchApplication" />
       <item itemvalue="Spring Boot.FastDFSOSSApplication" />
+      <item itemvalue="Spring Boot.RabbitMQApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RabbitMQApplication" />
         <item itemvalue="Application.Receiver" />
         <item itemvalue="Application.Sender" />
         <item itemvalue="Spring Boot.FastDFSOSSApplication" />
         <item itemvalue="Spring Boot.ElasticSearchApplication" />
-        <item itemvalue="Spring Boot.Application (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +295,10 @@
       <workItem from="1611803568207" duration="597000" />
       <workItem from="1611804290860" duration="648000" />
       <workItem from="1612103010460" duration="9920000" />
+      <workItem from="1613746590032" duration="2777000" />
+      <workItem from="1615042487375" duration="4728000" />
+      <workItem from="1615129123161" duration="3711000" />
+      <workItem from="1615524212458" duration="9296000" />
     </task>
     <task id="LOCAL-00001" summary="增加sso elasticsearch">
       <created>1596041044245</created>
@@ -354,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608279710120</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="增加rabbitmq 增加rabbitmq例子">
+      <created>1613746833971</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613746833971</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,8 @@
     <MESSAGE value="增加fastdfs和oss" />
     <MESSAGE value="修改配置文件" />
     <MESSAGE value="使用druid连接池" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用druid连接池" />
+    <MESSAGE value="增加rabbitmq 增加rabbitmq例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加rabbitmq 增加rabbitmq例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,6 +387,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.net.ConnectException" package="java.net" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.concurrent.TimeoutException" package="java.util.concurrent" />
+          <option name="timeStamp" value="3" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

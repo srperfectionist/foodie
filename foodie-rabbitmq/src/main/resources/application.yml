@@ -1,0 +1,5 @@
+server:
+  port: 8077
+
+logging:
+  config: classpath:logback-springdev.xml

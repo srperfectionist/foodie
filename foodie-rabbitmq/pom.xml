@@ -11,5 +11,12 @@
 
     <artifactId>foodie-rabbitmq</artifactId>
 
-
+    <dependencies>
+        <!-- RabbitMQ相关依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+            <version>2.3.0.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>
