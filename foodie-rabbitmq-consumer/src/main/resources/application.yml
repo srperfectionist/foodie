@@ -1,5 +1,5 @@
 server:
-  port: 8077
+  port: 8099
 
 spring:
   datasource: # 数据源的相关配置
@@ -23,10 +23,12 @@ spring:
     password: admin
     virtual-host: /
     connection-timeout: 15000
-    publisher-confirm-type: correlated  # 启用消息确认模式
-#    publisher-returns: true             # 可以确保消息在未被队列接收时返回
-#    template:
-#      mandatory: true                   # 指定消息在没有被队列接收时是否强行退回还是直接丢弃
+    listener:
+      simple:
+        acknowledge-mode: manual          # 表示消费者消费成功消息以后需要手工的进行签收(ack)，默认auto
+        concurrency: 5
+        max-concurrency: 10
+        prefetch: 1
 
 logging:
   config: classpath:logback-springdev.xml

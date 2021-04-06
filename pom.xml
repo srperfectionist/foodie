@@ -17,6 +17,7 @@
         <module>foodie-elasticsearch</module>
         <module>foodie-fastdfs-oss</module>
         <module>foodie-rabbitmq</module>
+        <module>foodie-rabbitmq-consumer</module>
     </modules>
 
     <packaging>pom</packaging>
